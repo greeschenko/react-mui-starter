@@ -1,15 +1,18 @@
 require('./app.sass');
+require("../node_modules/font-awesome/scss/font-awesome.scss");
 
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import MyAwesomeReactComponent from './mycomp.jsx';
 import injectTapEventPlugin from 'react-tap-event-plugin';
+
+import MyLayout from './layout.jsx';
+
 injectTapEventPlugin();
 
 const App = () => (
   <MuiThemeProvider>
-    <MyAwesomeReactComponent />
+    <MyLayout />
   </MuiThemeProvider>
 );
 
