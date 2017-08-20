@@ -10,22 +10,21 @@ module.exports = {
     },
     devtool: '#cheap-module-source-map',
     module: {
-        loaders: [
-            {
+        loaders: [{
                 test: /\.jsx?$/,
                 exclude: [/node_modules/],
                 loader: "babel-loader",
                 query: {
-                    presets: ['es2015', 'react', 'stage-0', 'stage-1', 'react-hmre']
+                    presets: ['es2015', 'react', 'stage-0', 'stage-1']
                 }
             },
             {
                 test: /\.sass$/,
-                loaders: [ 'style-loader', 'css-loader', 'sass-loader' ]
+                loaders: ['style-loader', 'css-loader', 'sass-loader']
             },
             {
                 test: /\.scss$/,
-                loaders: [ 'style-loader', 'css-loader', 'sass-loader' ]
+                loaders: ['style-loader', 'css-loader', 'sass-loader']
             },
             {
                 test: /\.css$/,
